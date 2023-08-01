@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reports.css">
+    <title>List of ADR Reports</title>
+</head>
+
+<body>
+    <div class="container adr-reports">
+        <h2>List of ADR Reports</h2>
+        <ul>
+            <% adrReports.forEach(report => { %>
+            <li>
+                <h3>Report ID: <%= report.id %></h3>
+                <p>Age: <%= report.age %></p>
+                <p>Sex: <%= report.sex %></p>
+                <p>Reactions: <%= report.reactions %></p>
+                <p>Drugs: <%= report.drugs %></p>
+                <!-- Display other ADR report fields as needed -->
+            </li>
+            <% }) %>
+        </ul>
+    </div>
+</body>
+
+</html>
